@@ -157,7 +157,7 @@
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url("../images/BC-Hero.png") center / cover no-repeat;
+  background: url("../images/hero-interagente.jpeg") 70% center / cover no-repeat;
 }
 
 /* Película escura à esquerda para garantir leitura do texto */
