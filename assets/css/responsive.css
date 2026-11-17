@@ -44,16 +44,8 @@
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
   .cenarios-grid{ grid-template-columns: repeat(3, 1fr); }
 
-  .agent-detail__grid { grid-template-columns: 1fr 1fr; gap: var(--space-xl); }
+  .cta-final__grid { grid-template-columns: minmax(0, 760px); justify-content: center; }
 
-  .cta-final__grid { grid-template-columns: 5fr 7fr; gap: var(--space-xl); }
-
-  /* A imagem acompanha a rolagem enquanto a pessoa preenche o formulário */
-  .cta-final__visual {
-    display: block;
-    position: sticky;
-    top: calc(var(--navbar-height) + var(--space-md));
-  }
 
   .footer__inner { grid-template-columns: repeat(2, 1fr); }
 }
@@ -90,9 +82,13 @@
 
   .footer__inner { grid-template-columns: 2fr repeat(4, 1fr); }
 
-  .cta-final__grid { grid-template-columns: 4fr 6fr; }
 }
 
+
+/* Grade de 3 itens (O que é, Starya): 3 colunas, sem espaço vazio */
+@media (min-width: 768px) {
+  .metrics-grid--3 { grid-template-columns: repeat(3, 1fr); }
+}
 
 /* ══════════════ ≥ 1440px – telas largas ══════════════ */
 @media (min-width: 1440px) {

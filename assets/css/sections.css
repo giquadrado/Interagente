@@ -323,85 +323,6 @@
 .agents-grid > .agent-card { scroll-snap-align: start; }
 
 
-/* ══════════════ SIMULAÇÃO DO AGENTE ══════════════ */
-
-.agent-detail__grid {
-  display: grid;
-  gap: var(--space-lg);
-  align-items: center;
-}
-
-.agent-detail__tag {
-  margin-bottom: var(--space-xs);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--color-accent-deep);
-}
-
-.agent-detail__title {
-  font-size: var(--text-h2);
-  font-weight: 800;
-}
-
-.agent-detail__desc {
-  margin-top: var(--space-sm);
-  color: var(--color-text-muted);
-}
-
-.agent-detail__checklist {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-  margin: var(--space-md) 0 var(--space-lg);
-  list-style: none;
-}
-
-/* Marcador de check desenhado em CSS */
-.agent-detail__checklist li {
-  position: relative;
-  padding-left: 1.9rem;
-  font-weight: 500;
-}
-
-.agent-detail__checklist li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.15em;
-  width: 1.25rem;
-  height: 1.25rem;
-  border-radius: 50%;
-  background-color: var(--color-accent-soft);
-}
-
-.agent-detail__checklist li::after {
-  content: "";
-  position: absolute;
-  left: 0.45rem;
-  top: 0.38em;
-  width: 0.35rem;
-  height: 0.65rem;
-  border: solid var(--color-accent-deep);
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-
-.agent-detail__chat {
-  padding: var(--space-md);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background-color: var(--color-bg);
-  box-shadow: var(--shadow-card);
-}
-
-/* Troca de agente (agents.js) */
-.agent-detail__panel,
-.agent-detail__chat { transition: opacity var(--transition-fast); }
-
-.agent-detail__panel.is-updating,
-.agent-detail__chat.is-updating { opacity: 0.3; }
-
-
 /* ══════════════ INDICADORES ══════════════ */
 
 .metrics-grid {
@@ -483,21 +404,9 @@
 .cta-final__grid {
   display: grid;
   gap: var(--space-lg);
-  align-items: start; /* imagem alinha com o topo do título, não com o meio do formulário */
+  align-items: start;
 }
 
-.cta-final__visual { display: none; } /* imagem só a partir do tablet */
-
-.cta-final__image {
-  display: block;
-  width: 100%;
-  aspect-ratio: 3 / 4;            /* proporção da arte (1086 × 1448) */
-  object-fit: cover;
-  object-position: top center;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-card);
-  background-color: var(--color-surface-dark); /* evita "buraco" branco enquanto carrega */
-}
 
 .cta-final__title {
   font-size: var(--text-h2);
