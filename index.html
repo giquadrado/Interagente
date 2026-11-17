@@ -523,8 +523,10 @@
 
       <a href="chat.html" class="btn btn--primary btn--full cta-final__chat">Conversar com a Clara agora</a>
 
-      <div class="form-card">
-        <p class="form-card__label">Prefere que a gente entre em contato?</p>
+      <button type="button" class="btn btn--outline btn--full cta-final__open-form" id="open-form" aria-controls="form-card" aria-expanded="false">Prefere que a gente entre em contato?</button>
+
+      <div class="form-card" id="form-card">
+        <p class="form-card__label">Deixe seus dados e o nosso time entra em contato</p>
 
         <form id="contact-form" novalidate>
           <p class="form-hint">Campos com <span aria-hidden="true">*</span><span class="visually-hidden">asterisco</span> são obrigatórios.</p>
